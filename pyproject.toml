@@ -1,0 +1,15 @@
+[project]
+name = "trialsim"
+version = "0.1.0"
+description = "Monte Carlo clinical trial enrollment, timeline and power simulation"
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["trialsim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

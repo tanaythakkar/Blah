@@ -1,0 +1,28 @@
+{
+  "scenarios": [
+    {
+      "name": "baseline 34 sites",
+      "target_n": 280,
+      "n_sites": 34,
+      "activation_months": {"kind": "triangular", "low": 3, "mode": 6, "high": 12},
+      "site_rate_per_month": {"kind": "lognormal", "median": 0.9, "sigma": 0.6},
+      "screen_fail": {"kind": "beta", "a": 6, "b": 14},
+      "dropout": {"kind": "beta", "a": 13, "b": 87},
+      "deadline_months": 24,
+      "effect_size": 4.0,
+      "sd": 11.0
+    },
+    {
+      "name": "scenario B 42 sites",
+      "target_n": 280,
+      "n_sites": 42,
+      "activation_months": {"kind": "triangular", "low": 3, "mode": 6, "high": 12},
+      "site_rate_per_month": {"kind": "lognormal", "median": 0.9, "sigma": 0.6},
+      "screen_fail": {"kind": "beta", "a": 6, "b": 14},
+      "dropout": {"kind": "beta", "a": 13, "b": 87},
+      "deadline_months": 24,
+      "effect_size": 4.0,
+      "sd": 11.0
+    }
+  ]
+}
